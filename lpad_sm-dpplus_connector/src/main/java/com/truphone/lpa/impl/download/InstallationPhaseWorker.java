@@ -61,6 +61,7 @@ public class InstallationPhaseWorker {
         int totalApdus = 0;
 
         for (List<String> apdus : sbpp.values()) {
+            if(apdus == null) continue;
             totalApdus += apdus.size();
         }
 
